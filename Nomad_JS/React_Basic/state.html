@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+  <body>
+    <div id="root"></div>
+  </body>
+  <!-- import react, react-dom -->
+  <script src="https://unpkg.com/react@17.0.2/umd/react.production.min.js"></script>
+  <script src="https://unpkg.com/react-dom@17.0.2/umd/react-dom.production.min.js"></script>
+  <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
+
+  <script type="text/babel">
+    function App() {
+      const [counter, setCounter] = React.useState(0); //초기값 0, state가 바뀌면 리렌더링
+      const onClick = () => {
+        //setCounter(counter + 1);
+        setCounter((current) => current + 1); //counter + 1 하는 것보다 더 안전
+      };
+
+      return (
+        <div>
+          <h3>Total Clicks: {counter}</h3>
+          <button onClick={onClick}>Click me</button>
+        </div>
+      );
+    }
+
+    const root = document.querySelector('#root');
+
+    ReactDOM.render(<App />, root);
+  </script>
+</html>

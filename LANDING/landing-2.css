@@ -1,0 +1,94 @@
+.landing-2 {
+  height: 100vh;
+  width: 100%;
+  background-repeat: no-repeat;
+  /* 글꼴 */
+  overflow-x: hidden;
+  overflow-y: auto;
+}
+
+.top-2 {
+  display: flex;
+  flex-flow: column;
+  margin-left: 10%;
+  margin-right: 10%;
+  margin-top: 1%;
+}
+
+.sub-top-2 {
+  margin-bottom: 0px;
+  font-size: 3rem;
+  font-family: 'Do Hyeon', sans-serif;
+}
+
+#subsub-top-2 {
+  font-family: 'Gowun Dodum', sans-serif;
+}
+
+.card-menu {
+  position: relative;
+}
+.card-menu-img {
+  display: flex;
+  justify-content: space-evenly;
+}
+.card-menu-img img {
+  width: 18%;
+  margin-top: 50px;
+  border-radius: 25px;
+}
+.card-menu-txt {
+  display: flex;
+  position: absolute;
+  top: 15%;
+  color: whitesmoke;
+  font-family: 'Gowun Dodum', sans-serif;
+  font-size: 25px;
+}
+.card-menu-txt p {
+  margin-top: 0px;
+  margin-bottom: 0px;
+}
+#Marina-Bay {
+  margin-left: 100px;
+}
+#Suntec {
+  margin-left: 235px;
+}
+#Church {
+  margin-left: 280px;
+}
+#Hotel {
+  margin-left: 270px;
+}
+
+.Browser-all {
+  display: flex;
+  align-items: center;
+  margin-left: 180px;
+  margin-top: 40px;
+  color: gray;
+  font-family: 'Gowun Dodum', sans-serif;
+  font-size: 15px;
+  font-weight: bold;
+}
+.Browser-all-icon {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0px;
+  width: 30px;
+  height: 30px;
+  border: 2px solid skyblue;
+  border-radius: 50%;
+  margin-left: 20px;
+}
+
+/* 반응형 */
+@media (max-width: 767px) {
+  .Browser-all {
+    margin-top: 40%;
+    margin-left: 0px;
+    justify-content: center;
+  }
+}
